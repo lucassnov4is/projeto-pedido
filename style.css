@@ -1,0 +1,72 @@
+/* Reset básico para tirar margens padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    /* Centraliza tudo na tela vertical e horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ca96d1; /* Cor de fundo suave */
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(141, 23, 196);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.main-image {
+    max-width: 300px; /* Tamanho máximo da imagem */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+    position: relative; /* Necessário para o botão "não" se mover aqui dentro */
+}
+
+/* Estilo geral dos botões */
+.btn {
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado do link no botão SIM */
+    color: white;
+    transition: transform 0.2s; /* Animação suave ao clicar */
+}
+
+.btn:active {
+    transform: scale(0.95); /* Efeito de clique */
+}
+
+/* Estilo específico do botão SIM */
+.btn-sim {
+    background-color: #28a745; /* Verde */
+}
+
+/* Estilo específico do botão NÃO */
+.btn-nao {
+    background-color: #dc3545; /* Vermelho */
+    /* REMOVEMOS O position: fixed DAQUI */
+    /* Ele vai começar paradinho do lado do botão SIM */
+}
