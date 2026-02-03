@@ -1,0 +1,51 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+
+body {
+    background-color: #2c3e50; /* Um fundo azul escuro elegante */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu-container { text-align: center; }
+
+h1 { margin-bottom: 10px; }
+p { margin-bottom: 30px; color: #bdc3c7; }
+
+.cards-area {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    text-decoration: none; /* Tira o sublinhado do link */
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid transparent;
+}
+
+.card h2 { font-size: 18px; margin-bottom: 10px; }
+.card p { font-size: 14px; color: #666; margin: 0; }
+
+/* Cores específicas para as bordas de cada card */
+.card-pedido { border-bottom-color: #e74c3c; } /* Vermelho */
+.card-biscoito { border-bottom-color: #f1c40f; } /* Amarelo */
+
+/* Efeito ao passar o mouse */
+.card:hover {
+    transform: translateY(-5px); /* Sobe um pouquinho */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
